@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+nav.sticky {
+  background-color: #3586ff;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+}
+.navbar {
+  background-color: rgb(216, 226, 247);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-logo {
+  color: #3586ff;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #0e2431;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #3586ff;
+}
+
+.nav-item .active {
+  color: #3586ff;
+  border: 1px solid #ffdd40;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: rgb(216, 226, 247);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #3586ff;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #3586ff;
+  }
+}
+.headers {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header-item-1 {
+  font-size: xx-large;
+  line-height: 50px;
+}
+.header-item-2 {
+  margin-top: 20px;
+}
+.open-campaigns-box {
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.open-campaigns {
+  padding-top: 30px;
+  font-size: x-large;
+}
+.back-button {
+  margin-top: 40px;
+}
+.footer-container {
+  margin-top: 150px;
+  background-color: rgb(216, 226, 247);
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: large;
+}
+/* .footer-icons a {
+    padding: 10px;
+  } */
+.footer-icons .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* border-radius: 50%; */
+}
+.footer-icons .fa:hover {
+  opacity: 0.7;
+}
+
+.footer-icons .fa-facebook {
+  /* background: #3b5998; */
+  color: #3b5998;
+}
+
+.footer-icons .fa-twitter {
+  /* background: #55acee; */
+  color: #55acee;
+}
+
+.working {
+  /* background-color: #ffdd40; */
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+.working-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.working-item {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.working-image {
+  height: 50px;
+  width: 50px;
+}
+.working-item1-title {
+  font-size: medium;
+  font-weight: bolder;
+  color: brown;
+}
+.working-item2-title {
+  font-size: medium;
+  font-weight: bolder;
+  color: darkgreen;
+}
+
+.working-text {
+  color: rgb(84, 84, 84);
+}
