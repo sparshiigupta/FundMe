@@ -2,20 +2,20 @@
 
 ## Landing Page:
 
-![Landing](./screenshots/landing-page.png)
+![](./screenshots/a.png)
 
 ## Create a new Campaign:
 
-![create-campaign](./screenshots/create-campaign.png)
+![](./screenshots/2.png)
 
 ## Campaign Details:
 
-![campaign-info](./screenshots/campaign-info.png)
+![](./screenshots/3.png)
 
 ## Create a new withdrawal request:
 
-![create-request](./screenshots/create-withdrawal-request.png)
+![](./screenshots/4.png)
 
 ## Withdrawal Requests:
 
-![requests](./screenshots/withdrawal-requests.png)
+![](./screenshots/5.png)
